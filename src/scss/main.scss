@@ -1,0 +1,13 @@
+@import 'reset-css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oleo+Script&family=Orelega+One&display=swap');
+
+@import './base/vars';
+@import './base/base';
+
+@import './section/header';
+@import './section/header-top';
+@import './section/home';
+@import './section/about-res';
+@import './section/menu';
+@import './section/product';
+@import './section/cart-popup';

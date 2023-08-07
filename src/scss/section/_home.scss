@@ -1,0 +1,39 @@
+.home{
+    position: relative;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.40) 52.60%, #000 100%), url(img/home-bg.jpg), lightgray 0px -316px / 100% 177.733% no-repeat;
+    min-height: 650px;
+    object-fit: cover;
+
+    .home-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 50px;
+        transform: translate(-50%,-50%);
+
+        .home-logo{
+            position: relative;
+            font-size: 90px;
+            font-family: $font-2;
+            color: $color-1;
+            padding-bottom: 30px;
+
+            &::after{
+                position: absolute;
+                bottom: 0;
+                left: calc(50% - 45px);
+                content: '';
+                width: 90px;
+                height: 5px;
+                background-color: $color-1;
+            }
+        }
+
+        .home-text{
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    }
+}

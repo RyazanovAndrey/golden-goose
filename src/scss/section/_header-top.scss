@@ -1,0 +1,44 @@
+.header-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.40) 52.60%, #000 100%), url(img/home-top-bg.jpg), lightgray 0px -316px / 100% 350.789% no-repeat;
+    min-height: 380px;
+
+    .header-top-container {
+
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: inline-block;
+
+        .header-top-logo {
+            position: relative;
+            font-size: 90px;
+            color: $color-1;
+            font-family: $font-2;
+            padding-bottom: 30px;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 90px;
+                height: 5px;
+                background-color: $color-1;
+                bottom: 0;
+                left: calc(50% - 45px);
+            }
+        }
+
+        .header-top-text {
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            margin-top: 20px;
+        }
+    }
+
+
+}

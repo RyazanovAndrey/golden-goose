@@ -1,0 +1,22 @@
+.about-res{
+    padding: 180px 0;
+    background-color: $color-3;
+
+    .about-res-wrapper{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 170px;
+    }
+
+    .about-res-text{
+        margin-top: 65px;
+        font-size: 18px;
+        color: $color-2;
+        line-height: 141%;
+    }
+
+    .about-res-img{
+        opacity: 0.3;
+    }
+}
