@@ -1,0 +1,27 @@
+.popular {
+    padding: 100px 0;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 100%),
+    url(img/popular-eat.jpg);
+
+    .swiper-slider {
+        margin-top: 70px;
+
+        .card {
+            background-color: black;
+            color: $color-2;
+            width: 280px;
+        }
+
+        .cart-text{
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    color: white !important;
+}

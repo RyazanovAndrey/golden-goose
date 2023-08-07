@@ -1,0 +1,32 @@
+.contacts {
+    padding: 100px 0;
+    background: $color-3;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 100%),
+    url(img/contacts-bg.jpg);
+
+
+    .contacts-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-top: 70px;
+
+        .contacts-card {
+
+            .contacts-info {
+                background: $color-2;
+                font-size: 18px;
+                padding: 20px 40px;
+                border-bottom: 5px solid $color-1;
+                min-height: 40px;
+            }
+
+            .contacts-name{
+                font-size: 25px;
+                color: $color-2;
+                margin-top: 35px;
+            }
+        }
+    }
+}
