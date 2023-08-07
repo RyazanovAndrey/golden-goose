@@ -17,9 +17,13 @@ const CartContext = ({ children }) => {
         }
     }
 
+    const deleteProduct = (id) => {
+        setCart(cart.filter(item => item.id != id))
+    }
+
     return (
         <div>
-            <CartCont.Provider value={{ cart, addToCart, setCart }}>
+            <CartCont.Provider value={{ cart, addToCart, setCart, deleteProduct }}>
                 {children}
             </CartCont.Provider>
         </div>

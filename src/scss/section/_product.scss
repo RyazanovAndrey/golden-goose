@@ -1,11 +1,12 @@
 .product {
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
     align-items: center;
 
     .product-img {
-        width: 240px;
+        width: 180px;
     }
 
     .product-title {
