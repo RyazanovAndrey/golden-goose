@@ -12,6 +12,11 @@
         transform: translate(-50%,-50%);
 
         .home-logo{
+
+            @media(max-width: 992px){
+                font-size: 60px;
+            }
+
             position: relative;
             font-size: 90px;
             font-family: $font-2;

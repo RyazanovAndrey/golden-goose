@@ -3,10 +3,17 @@
     background-color: $color-3;
 
     .about-res-wrapper{
+
+        @media(max-width:992px){
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 100px;
+        }
+        
         display: grid;
         align-items: center;
         grid-template-columns: repeat(2, 1fr);
-        gap: 170px;
+        justify-items: end;
     }
 
     .about-res-text{
@@ -17,6 +24,7 @@
     }
 
     .about-res-img{
+        width: 100%;
         opacity: 0.3;
     }
 }

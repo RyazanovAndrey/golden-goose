@@ -5,10 +5,10 @@ import SwiperSlider from '../components/SwiperSlider'
 const Home = () => {
 
   const whyCont = [
-    { img: '01.svg', title: 'Якісно', desc: 'Усі страви виготовлені з якісних продуктів' },
-    { img: '02.svg', title: 'Швидко', desc: 'Доставка замовлення здійснюється в найкоротший термін' },
-    { img: '03.svg', title: 'Професійно', desc: 'Приготування всіх страв під наглядом досвідченого шеф-кухаря' },
-    { img: '04.svg', title: 'Надійно', desc: 'Ми гарантуємо якість усіх наших страв' }
+    {img: '01.svg', title: 'Якісно', desc: 'Усі страви виготовлені з якісних продуктів' },
+    {img: '02.svg', title: 'Швидко', desc: 'Доставка замовлення здійснюється в найкоротший термін' },
+    {img: '03.svg', title: 'Професійно', desc: 'Приготування всіх страв під наглядом досвідченого шеф-кухаря' },
+    {img: '04.svg', title: 'Надійно', desc: 'Ми гарантуємо якість усіх наших страв' }
   ]
 
   const contactsInfo = [
@@ -56,8 +56,8 @@ const Home = () => {
         <div className="container">
           <div className="title-section">Чому обирають нас</div>
           <div className="why-wrapper">
-            {whyCont.map(item => (
-              <div className="why-card">
+            {whyCont.map((item, i) => (
+              <div key={i} className="why-card">
                 <img src={`img/${item.img}`} alt="" />
                 <div className="card-title">{item.title}</div>
                 <div className="card-text">{item.desc}</div>
@@ -71,8 +71,8 @@ const Home = () => {
         <div className="container">
           <div className="title-section">Контакти</div>
           <div className="contacts-wrapper">
-              {contactsInfo.map(item => (
-                <div className="contacts-card">
+              {contactsInfo.map((item, i) => (
+                <div key={i} className="contacts-card">
                   <div className="contacts-info">{item.info}</div>
                   <div className="contacts-name">{item.name}</div>
                 </div>

@@ -8,8 +8,18 @@
     }
 
     .about-wrapper {
+
+        @media(max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media(max-width: 480px) {
+            grid-template-columns: 1fr;
+        }
+
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
     }
 
     .about-name {
@@ -35,7 +45,14 @@
     }
 
     .about-text-sec {
+
+        @media(max-width: 992px) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
         display: grid;
+        gap: 50px;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         justify-items: end;
@@ -44,12 +61,19 @@
     }
 
     .about-title{
+
+        @media(max-width: 480px) {
+            font-size: 20px;;
+        }
+
+
         font-size: 40px;
         margin-bottom: 40px;
         color: $color-3;
     }
 
     .about-content{
+
         font-size: 18px;
         line-height: 141%;
     }

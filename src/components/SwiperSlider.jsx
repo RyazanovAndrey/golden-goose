@@ -28,8 +28,8 @@ export default () => {
                 speed={500}
                 autoplay
             >
-                {swiperImg.map(item => (
-                    <SwiperSlide><div className='card'><img src={`img/${item.img}`} alt="" /><div className='cart-text'>{item.title}</div></div></SwiperSlide>
+                {swiperImg.map((item, i) => (
+                    <SwiperSlide key={i}><div className='card'><img src={`img/${item.img}`} alt="" /><div className='cart-text'>{item.title}</div></div></SwiperSlide>
                 ))}
             </Swiper>
         </div>

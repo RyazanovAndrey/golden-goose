@@ -10,12 +10,20 @@
 
 .menu-tab {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
     .tab {
+
+        @media(max-width: 768px) {
+            width: 100%;
+        }
+
         cursor: pointer;
         font-size: 18px;
         color: $color-3;
         padding: 15px 50px;
+        background: #f7f7f7;
 
         &.active {
             background-color: $color-1;
@@ -24,6 +32,15 @@
 }
 
 .product-wrapper {
+
+    @media(max-width: 992px) {
+        grid-template-columns: 1fr;
+    }
+
+    @media(max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
+
     display: grid;
     min-height: 430px;
     align-items: start;
@@ -31,6 +48,10 @@
     grid-template-columns: repeat(2, 1fr);
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.about-img{
+    width: 100%;
 }
 
 .btn-to-cart {
@@ -55,17 +76,17 @@
     padding: 25px 0;
 }
 
-.tab-active{
+.tab-active {
     cursor: pointer;
     font-weight: 700;
     color: $color-1;
 }
 
-.page-num{
+.page-num {
     cursor: pointer;
 }
 
 .prev,
-.next{
+.next {
     cursor: pointer;
 }

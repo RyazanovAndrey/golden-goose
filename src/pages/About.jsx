@@ -19,7 +19,7 @@ const About = () => {
         <div className="about-wrapper">
           {cooks.map(item => (
             <div className="about-cart">
-              <img src={`img/${item.img}`} alt="" />
+              <img className='about-img' src={`img/${item.img}`} alt="" />
               <h3 className='about-name'>{item.name}</h3>
               <h4 className='about-job'>{item.job}</h4>
             </div>
@@ -30,7 +30,7 @@ const About = () => {
             <h3 className='about-title'>Ласкаво просимо!</h3>
             <p className='about-content'>Своєю роботою ми хочемо радувати кожного нашого відвідувача. Ми гарантуємо всім клієнтам, що час, проведений у нашому закладі, буде відрізнятися особливим теплом та вишуканим смаком.</p>
           </div>
-          <img src="img/cook-hallo.jpg" alt="" />
+          <img style={{width: '100%'}} src="img/cook-hallo.jpg" alt="" />
         </div>
         
       </div>

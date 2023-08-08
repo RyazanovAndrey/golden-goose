@@ -1,11 +1,20 @@
 .product {
 
+    @media(max-width:480px){
+        grid-template-columns: 1fr;
+    }
+
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 30px;
     align-items: center;
 
     .product-img {
+
+        @media(max-width:480px){
+            width: 100%;;
+        }
+
         width: 180px;
     }
 
