@@ -8,10 +8,8 @@ import CartPopup from '../components/CartPopup'
 
 const Menu = () => {
 
-  const { product } = useContext(ProductCont)
+  const { product, actTab, setActTab } = useContext(ProductCont)
   const { cart } = useContext(CartCont)
-
-  const [actTab, setActTab] = useState(0)
 
   const [isOpnPopup, setIsOpenPopup] = useState(false)
   console.log(isOpnPopup);

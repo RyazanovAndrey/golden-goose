@@ -2,18 +2,20 @@ import React, { useContext, useState } from 'react'
 import { CartCont } from '../context/CartContext'
 import PopupImg from '../../public/img/popup-img.svg'
 
+import { useEffect } from 'react'
+
 const CartPopup = ({ isOpnPopup, setIsOpenPopup }) => {
 
     const { cart, setCart, deleteProduct } = useContext(CartCont)
     const [subOrder, setSubOrder] = useState(false)
+
+    const totalCart = cart.reduce((total, item) => total = total + Number(item.price), 0)
 
     const closeAll = () => {
         setIsOpenPopup(!isOpnPopup)
         setCart([])
         setSubOrder(false)
     }
-
-    const totalCart = cart.reduce((total, item) => total = total + item.price, 0)
 
     return (
         <div className={isOpnPopup ? 'cart-popup open' : 'cart-popup'} >
@@ -22,7 +24,7 @@ const CartPopup = ({ isOpnPopup, setIsOpenPopup }) => {
                 {subOrder ? (
                     <>
                         <div className="cart-popup-title">Дякуємо за замовлення!</div>
-                            <a href='#' className="btn-finish" onClick={closeAll}>Продовжити</a>
+                        <a href='#' className="btn-finish" onClick={closeAll}>Продовжити</a>
                     </>
                 ) : (
                     <div>

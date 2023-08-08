@@ -9,7 +9,7 @@ const CartContext = ({ children }) => {
     const addToCart = (product) => {
 
         const findProduct = cart.find(item => item.id == product.id)
-        
+
         if (findProduct) {
             setCart(cart.filter(item => item.id != product.id))
         } else {
