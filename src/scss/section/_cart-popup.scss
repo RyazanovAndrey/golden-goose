@@ -15,10 +15,15 @@
     }
 
     .cart-popup-body {
+
+        @media(max-width:480px){
+            max-width: 300px;
+        }
+
         background-color: $color-3;
         text-align: center;
         padding: 15px 60px 25px;
-        width: 650px;
+        max-width: 650px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -63,6 +68,10 @@
 }
 
 .btn-group {
+
+    @media(max-width:480px){
+        grid-template-columns: 1fr;
+    }
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
