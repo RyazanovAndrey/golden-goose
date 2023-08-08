@@ -1,37 +1,39 @@
-.menu{
+.menu {
     padding-top: 350px;
 
-    .menu-text{
+    .menu-text {
         margin: 70px 0 60px;
         font-size: 23px;
         color: #AEABAB;
     }
 }
 
-.menu-tab{
+.menu-tab {
     display: flex;
 
-    .tab{
+    .tab {
         cursor: pointer;
         font-size: 18px;
         color: $color-3;
         padding: 15px 50px;
 
-        &.active{
+        &.active {
             background-color: $color-1;
         }
     }
 }
 
-.product-wrapper{
+.product-wrapper {
     display: grid;
+    min-height: 430px;
+    align-items: start;
     gap: 50px;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.btn-to-cart{
+.btn-to-cart {
     position: fixed;
     cursor: pointer;
     right: 10px;
@@ -42,6 +44,28 @@
     padding: 10px 30px;
 }
 
-.menu-text{
+.menu-text {
     font-size: 18px !important;
+}
+
+.pagination {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.tab-active{
+    cursor: pointer;
+    font-weight: 700;
+    color: $color-1;
+}
+
+.page-num{
+    cursor: pointer;
+}
+
+.prev,
+.next{
+    cursor: pointer;
 }
