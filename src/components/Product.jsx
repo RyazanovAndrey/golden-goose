@@ -8,7 +8,7 @@ const Product = ({ product, isAdd }) => {
 
   return (
     <div className='product'>
-      <div>
+      <div className='product-box'>
         <img src={`img/product/${image}`} className='product-img' alt="" />
       </div>
       <div>

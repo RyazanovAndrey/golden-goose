@@ -9,14 +9,30 @@
     gap: 30px;
     align-items: center;
 
-    .product-img {
+    .product-box{
 
-        @media(max-width:480px){
-            width: 100%;;
-        }
-
+        overflow: hidden;
         width: 180px;
+        height: 180px;
+        cursor: pointer;
+       
+        
+        .product-img {
+
+            transition: 0.3s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            @media(max-width:480px){
+                width: 100%;;
+            }
+
+            width: 180px;
+        }
     }
+
 
     .product-title {
         position: relative;
