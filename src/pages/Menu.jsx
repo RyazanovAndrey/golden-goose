@@ -41,7 +41,7 @@ const Menu = () => {
           nextLabel="вперед >"
           onPageChange={e => setPagPage(e.selected + 1)}
           pageRangeDisplayed={4}
-          pageCount={2}
+          pageCount={4}
           previousLabel="< назад"
           renderOnZeroPageCount={null}
           containerClassName='pagination'
